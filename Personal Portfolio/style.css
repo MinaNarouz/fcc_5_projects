@@ -1,0 +1,206 @@
+
+html, body {
+    margin: 0;
+    position: relative;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#navbar {
+    background-color: #be3144;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    margin-top: 0%;
+}
+
+#navbar a {
+    display: block;
+    font-size: 1.7rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;   
+}
+
+#welcome-section {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    background-color: #000;
+    background-image: linear-gradient(
+62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1, #welcome-section h2 {
+    text-align: center;
+}
+
+#welcome-section h1 {
+    padding-top: 270px;
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: white;
+}
+
+#welcome-section h2 {
+    font-size: 2rem;
+    color: #be3144;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 1px;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567d;
+    margin-bottom: 0;
+}
+
+h1, h2, p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h2 {
+    font-size: 2.5rem;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 5rem auto;
+    border-bottom: 0.2rem solid white;
+    color: white
+}
+
+.project-image {
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    margin-bottom: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.projects-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    margin-top: -5px;
+    background-color: #303841;
+    height: 50px;
+    padding-top: 35px;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.project-tile {
+    text-decoration: none;
+    color: white;
+    margin-top: 0;
+}
+
+.code {
+    color: #413530;
+    margin-top: 0;
+    transition: color 0.3s ease-out;
+}
+
+.project-title:hover > .code {
+    color: rgb(201, 67, 26);
+}
+
+.project-tile:hover .code {
+    color: rgb(201, 67, 26);
+}
+
+#profile-container {
+    height: 100vh;
+    background-color: #303841;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#profile-link h1 {
+ margin-top: 0;
+ padding-top: 20px;
+ font-size: 3.7rem;
+ font-weight: 600;
+ color: white;
+ 
+}
+
+#coffee {
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+.social-media {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 40px;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition:  ease-out ;
+    
+}
+
+.social-media:hover {
+    position: relative;
+    top: 2%;
+}
+
+.footer-position {
+    position: relative;
+    top: 180px;
+}
+
+.hr {
+    width: 100%;
+    height: 5px;
+    background-color: #be3144;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+/* 
+.tuna {
+    animation: walk-cycle 1s steps(6) infinite;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-90/tuna_sprite.png) 0 0 no-repeat; 
+    height: 200px;
+    width: 400px;
+    margin: 100px auto 0;
+  }
+  
+  @keyframes walk-cycle {  
+    0% {background-position: 0 0; } 
+    100% {background-position: 0 -2391px; } 
+  } */
+
