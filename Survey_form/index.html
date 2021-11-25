@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey  Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+    <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+    <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <!-- User Story #3: I can see a form with id="survey-form". -->
+    </header>
+    <form action="" id="survey-form">
+    <div class="form-group">
+        <!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+    </div>
+    <div class="form-group">    
+        <!-- User Story #5 & 6: Inside the form element, I am required to enter an email in a field with id="email". -->
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" class="form-control" required>
+    </div> 
+    <div class="form-group">   
+        <!-- User Story #7, 8, 9: Inside the form, I can enter a number in a field with id="number". -->
+        <label for="age" id="number-label">Age (optional)</label>
+        <input type="number" name="age" id="number" min="15" max="50" placeholder="Age" class="form-control" >
+    </div>
+        <!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+    <div class="form-group">
+        <p>Which option best describes your current role?</p>
+
+        <select id="dropdown" name="role" class="form-control">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="student">student</option>
+        <option value="FullTimeJob">Full Time Job</option>
+        <option value="FullTimeLearner">Full Time Learner</option>
+        <option value="preferNotToSay">prefer Not To Say</option>
+        <option value="other">other</option>
+        </select>
+    </div>
+    <div class="form-group">
+    <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should 
+    be grouped using the name attribute. -->
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label >
+            <input type="radio" name="recommendation" id="">
+            Definitely
+        </label>
+        <label >
+            <input type="radio" name="recommendation" id="">
+            Maybe
+        </label>
+        <label >
+            <input type="radio" name="recommendation" id="">
+            Not sure
+        </label>
+    </div>
+
+    <div class="form-group">
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown_two" name="features" class="form-control">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="Challenges">Challenges</option>
+        <option value="Projects">Projects</option>
+        <option value="Community">Community</option>
+        <option value="OpenSource">Open Source</option>
+        </select>
+    </div>
+<!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+    <div class="form-group">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label><input type="checkbox" name="prefer" id="">Front-end Projects</label>
+        <label><input type="checkbox" name="prefer" id="">Back-end Projects</label>
+        <label><input type="checkbox" name="prefer" id="">Data Visualization</label>
+        <label><input type="checkbox" name="prefer" id="">Challenges</label>
+        <label><input type="checkbox" name="prefer" id="">Open Source Community</label>
+        <label><input type="checkbox" name="prefer" id="">Gitter help rooms</label>
+        <label><input type="checkbox" name="prefer" id="">Videos</label>
+        <label><input type="checkbox" name="prefer" id="">City Meetups</label>
+        <label><input type="checkbox" name="prefer" id="">Wiki</label>
+        <label><input type="checkbox" name="prefer" id="">Forum</label>
+        <label><input type="checkbox" name="prefer" id="">Additional Courses</label>
+    </div>
+
+    <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+
+    <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <input type="text" name="comment-area" id="input-textarea" placeholder="Enter your comment here..." class="form-control">
+    </div>
+
+        <!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs -->
+        <div class="form-group">
+            <button type="submit" id="submit"> Submit </button>
+        </div>
+    </form>
+</div>
+
+    
+
+
+
+
+
+</body>
+</html>
